@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://source.unsplash.com/random/1920x1080/?nature');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+background: linear-gradient(84deg, rgb(253 136 35), rgb(255 255 255 / 40%));}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.logo-container {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Brand colors for each social media platform */
+.social-link:nth-child(1) {
+    color: #E1306C; /* Instagram */
+}
+/*
+.social-link:nth-child(2) {
+    color: #1DA1F2; /* Twitter/X */
+/*}*/
+
+
+.social-link:nth-child(2) {
+    color: #1877F2; /* Facebook */
+}
+/*
+.social-link:nth-child(4) {
+    color: #0A66C2; /* LinkedIn */
+/*}*/
+
+.social-link:nth-child(3) {
+    color: #FF0000; /* YouTube */
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.tagline {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Media queries for better mobile experience */
+@media (max-width: 480px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .social-link {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+
+.social-link:nth-child(4) {
+    color: #25D366; /* WhatsApp */
+}
+
+.social-link:nth-child(5) {
+    color: #0078D7; /* Website (using a standard blue) */
+}
